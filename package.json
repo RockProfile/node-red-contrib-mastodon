@@ -1,6 +1,6 @@
 {
   "name": "@rockprofile/node-red-contrib-mastodon",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A collection of Ned Red nodes to perform actions against a Mastodon instance.",
   "dependencies": {
     "mastodon": "1.2.2"
