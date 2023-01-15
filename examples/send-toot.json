@@ -1,0 +1,52 @@
+[
+  {
+    "id": "7a0f1170ad9493f3",
+    "type": "tab",
+    "label": "Send Toot",
+    "disabled": false,
+    "info": "",
+    "env": []
+  },
+  {
+    "id": "c3f4b6118008aff7",
+    "type": "inject",
+    "z": "7a0f1170ad9493f3",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "This is a test toot",
+    "payloadType": "str",
+    "x": 460,
+    "y": 360,
+    "wires": [
+      [
+        "d11b6040526f25c4"
+      ]
+    ]
+  },
+  {
+    "id": "d11b6040526f25c4",
+    "type": "send-toot",
+    "z": "7a0f1170ad9493f3",
+    "name": "Send Toot",
+    "recipients": "",
+    "server": "ee5258e8746ed7a5",
+    "visibility": "public",
+    "x": 650,
+    "y": 360,
+    "wires": []
+  },
+  {
+    "id": "ee5258e8746ed7a5",
+    "type": "mastodon-server",
+    "apiurl": "https://mastodon.social/api/v1/",
+  }
+]

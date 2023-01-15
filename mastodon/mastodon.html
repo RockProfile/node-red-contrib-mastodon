@@ -1,0 +1,47 @@
+<script type="text/javascript">
+    RED.nodes.registerType('mastodon',{
+        category: 'social',
+        defaults: {
+            name: {
+                value: "",
+            },
+            server: {
+                value:"",
+                type:"mastodon-server",
+                required: true,
+            },
+            task: {
+                value: "followers",
+                required: true,
+            }
+        },
+        color: '#a6bbcf',
+        inputs: 1,
+        outputs: 1,
+        icon: "mastodon.png",
+        label: function() {
+            return this.name||"Mastodon";
+        },
+        paletteLabel: "mastodon"
+    });
+</script>
+
+<script type="text/html" data-template-name="mastodon">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name"><br /><br />
+
+        <label for="node-input-server"><i class="fa fa-tag"></i> Mastodon Server</label>
+        <input type="text" id="node-input-server" placeholder="Name"><br /><br />
+
+        <label for="node-input-task"><i class="fa fa-tag"></i> Task</label>
+        <select id="node-input-task">
+            <option value="followers">Follower Counts</option>
+        </select><br /><br />
+
+    </div>
+</script>
+
+<script type="text/html" data-help-name="mastodon">
+    <p>Fetch a collection of data from Mastodon.</p>
+</script>

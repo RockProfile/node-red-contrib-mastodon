@@ -1,0 +1,56 @@
+<script type="text/javascript">
+    RED.nodes.registerType('send-toot',{
+        category: 'social',
+        defaults: {
+            name: {
+                value: "",
+            },
+            recipients: {
+                value: "",
+            },
+            server: {
+                value:"",
+                type:"mastodon-server",
+                required: true,
+            },
+            visibility: {
+                value: "public",
+                required: true,
+            }
+        },
+        color: '#a6bbcf',
+        icon: "mastodon.png",
+        inputs: 1,
+        outputs: 0,
+        label: function() {
+            return this.name||"Send Toot";
+        },
+        paletteLabel: "send toot"
+    });
+</script>
+
+<script type="text/html" data-template-name="send-toot">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name"><br /><br />
+
+        <label for="node-input-server"><i class="fa fa-tag"></i> Mastodon Server</label>
+        <input type="text" id="node-input-server" placeholder="Name"><br /><br />
+
+        <label for="node-input-visibility"><i class="fa fa-tag"></i> Visibility</label>
+        <select id="node-input-visibility">
+            <option value="public">public</option>
+            <option value="private">private</option>
+            <option value="unlisted">unlisted</option>
+            <option value="direct">direct</option>
+        </select><br /><br />
+
+        <label for="node-input-recipients" hidden="hidden"><i class="fa fa-tag"></i> Recipient</label>
+        <input type="text" id="node-input-recipients"><br />
+
+    </div>
+</script>
+
+<script type="text/html" data-help-name="send-toot">
+    <p>Send msg.payload as a Mastodon toot.</p>
+</script>

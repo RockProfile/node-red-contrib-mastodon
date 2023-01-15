@@ -1,0 +1,38 @@
+{
+  "name": "@rockprofile/node-red-contrib-mastodon",
+  "version": "1.0.0",
+  "description": "A collection of Ned Red nodes to perform actions against a Mastodon instance.",
+  "dependencies": {
+    "mastodon": "1.2.2"
+  },
+  "node-red": {
+    "version": ">=3.0.0",
+    "nodes": {
+      "mastodon": "mastodon/mastodon.js",
+      "mastodon-server": "mastodon/mastodon-server.js",
+      "send-toot": "mastodon/send-toot.js"
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockprofile/node-red-contrib-mastodon-toots.git"
+  },
+  "keywords": [
+    "mastodon",
+    "node",
+    "node-red",
+    "toots"
+  ],
+  "author": "Peter McDonald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RockProfile/node-red-contrib-mastodon-toots/issues"
+  },
+  "homepage": "https://github.com/RockProfile/node-red-contrib-mastodon-toots#readme"
+}
