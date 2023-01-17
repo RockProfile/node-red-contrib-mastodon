@@ -1,6 +1,6 @@
 {
   "name": "@rockprofile/node-red-contrib-mastodon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of Ned Red nodes to perform actions against a Mastodon instance.",
   "dependencies": {
     "mastodon": "1.2.2"
@@ -32,7 +32,7 @@
   "author": "Peter McDonald",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RockProfile/node-red-contrib-mastodon-toots/issues"
+    "url": "https://github.com/RockProfile/node-red-contrib-mastodon/issues"
   },
-  "homepage": "https://github.com/RockProfile/node-red-contrib-mastodon-toots#readme"
+  "homepage": "https://github.com/RockProfile/node-red-contrib-mastodon#readme"
 }
