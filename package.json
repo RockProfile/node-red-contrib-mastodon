@@ -1,6 +1,6 @@
 {
   "name": "@rockprofile/node-red-contrib-mastodon",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A collection of Ned Red nodes to perform actions against a Mastodon instance.",
   "dependencies": {
     "mastodon": "1.2.2"
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rockprofile/node-red-contrib-mastodon-toots.git"
+    "url": "git+https://github.com/RockProfile/node-red-contrib-mastodon.git"
   },
   "keywords": [
     "mastodon",
