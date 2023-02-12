@@ -2,7 +2,7 @@
 
 node-red-contrib-mastodon-toots is a simple Node Red node allowing the following functionality:
 
-* [Followers](examples/followers.json) (follower and following count)
+* [mastodon](examples/mastodon.json) (follower and following count)
 * [Send Toot](examples/send-toot.json) (send a toot)
 
 ## Plannned functionality

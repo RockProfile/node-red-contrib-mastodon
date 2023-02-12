@@ -47,6 +47,6 @@
   {
     "id": "ee5258e8746ed7a5",
     "type": "mastodon-server",
-    "apiurl": "https://mastodon.social/api/v1/",
+    "apiurl": "https://mastodon.social/api/v1/"
   }
 ]
