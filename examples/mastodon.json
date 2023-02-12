@@ -1,0 +1,76 @@
+[
+  {
+    "id": "4f4cbcd7f8655413",
+    "type": "tab",
+    "label": "Mastodon Followers",
+    "disabled": false,
+    "info": "",
+    "env": []
+  },
+  {
+    "id": "6567f785c58d3c49",
+    "type": "inject",
+    "z": "4f4cbcd7f8655413",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 100,
+    "y": 180,
+    "wires": [
+      [
+        "119fdd564f9fb40b"
+      ]
+    ]
+  },
+  {
+    "id": "119fdd564f9fb40b",
+    "type": "mastodon",
+    "z": "4f4cbcd7f8655413",
+    "name": "",
+    "server": "6b0c15d86396d3df",
+    "task": "followers",
+    "x": 260,
+    "y": 180,
+    "wires": [
+      [
+        "0d959f737c1b905d"
+      ]
+    ]
+  },
+  {
+    "id": "0d959f737c1b905d",
+    "type": "debug",
+    "z": "4f4cbcd7f8655413",
+    "name": "debug 1",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "targetType": "full",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 420,
+    "y": 180,
+    "wires": []
+  },
+  {
+    "id": "ee5258e8746ed7a5",
+    "type": "mastodon-server",
+    "apiurl": "https://mastodon.social/api/v1/"
+  }
+]
